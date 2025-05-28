@@ -1,0 +1,11 @@
+<?php   //Reversão de String
+function RevString(){
+    $palavra = "palavra exemplo";
+    $inver_palavra = strrev("$palavra"); //inverte a string
+
+    echo "A palavra original é: $palavra\n";
+    echo "A palavra invertida é: $inver_palavra\n";
+}
+//chamando a função
+RevString();
+?>
