@@ -1,0 +1,17 @@
+<?php   //Palavra Palindromo
+function Palin(){
+	$nome = "NaTan";
+	$nome_minus = strtolower ("$nome");		//Transformando em minusculo
+	$inver_nome = strrev("$nome_minus");
+	
+	print ("Normal: $nome\nPalindromo: $inver_nome");
+	
+	if ($nome_minus == $inver_nome){
+	    echo "\nA palavra é um palindromo.";
+	}
+	else {
+	    echo "\nA palavra NÃO é um palindromo";
+	}
+}
+Palin();
+?>
