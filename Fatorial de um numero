@@ -1,0 +1,20 @@
+<?php   //Fatorial de um numero
+function fatorial(){
+    $numero = 3;
+    $numero_fato = $numero;
+    if ($numero_fato < 0){
+        echo "Fatorial de numero negativo não existe\n";
+    }
+    else if($numero == 0){
+        echo "O fatorial de zero sempre é: 1\n";
+    }
+    else{
+        for ($i = $numero_fato; $i > 1; $i--){
+            $numero_fato *= ($i - 1);
+        }
+        echo "O fatorial do numero é: $numero_fato\n";
+    }
+    echo "O numero escolhido foi: $numero";
+}
+fatorial();
+?>
